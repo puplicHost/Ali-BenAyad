@@ -25,6 +25,11 @@
             --card-bg: #374151;
             --nav-bg: rgba(17, 24, 39, 0.95);
             --border-color: #4b5563;
+            --hidden-section: none;
+        }
+
+        .section-hidden {
+            display: var(--hidden-section) !important;
         }
 
         html {
@@ -980,8 +985,8 @@
     <header>
         <div class="container">
             <img src="./cover.jpeg" alt="بن عايد بن علي حسيني الشمري" class="profile-img">
-            <h1>على بن عايد بن علي حسيني الشمري</h1>
-            <p>خبير في تطوير تطبيقات الموبايل (Engineering Manager) وكاتب محتوى متخصص</p>
+            <h1>بن عايد بن علي حسيني الشمري</h1>
+            <p>Mobile Engineering Manager | Senior Flutter Developer | PMP & TOGAF Certified</p>
             <div class="cta-buttons">
                 <a href="#services" class="cta-btn primary-btn">استكشف خدماتي</a>
                 <a href="#contact" class="cta-btn secondary-btn">تواصل معي</a>
@@ -995,37 +1000,44 @@
                 <h2>عني</h2>
             </div>
             <div class="about-content">
-                <div class="about-text">
+                <div class="about-text" dir="ltr" style="text-align: left;">
                     <p>
-                        <strong>Mobile Engineering Manager & Senior Flutter Developer</strong> بخبرة أكثر من 10 سنوات في
-                        بناء وقيادة تطبيقات موبايل قابلة للتوسع في قطاعات مثل fintech، التأمين، والتجارة الإلكترونية.
+                        I’m a passionate <strong>Mobile Engineering Manager and Senior Flutter Developer</strong> with
+                        over 10 years of experience leading and building scalable mobile apps. From startups to
+                        enterprise environments, I’ve built and managed high-performance teams, designed modular
+                        cross-platform architectures, and driven releases in high-stakes industries such as insurance,
+                        fintech, and e-commerce.
                     </p>
                     <p style="margin-top: 15px;">
-                        أمتلك خبرة قوية في قيادة الفرق، تصميم معماريات cross-platform، وتنفيذ CI/CD وعمليات الاختبار
-                        باحترافية. حاصل على PMP وTOGAF وScrum، وأجمع بين الخبرة التقنية والرؤية الاستراتيجية.
+                        With certifications in <strong>PMP, TOGAF, and Scrum</strong>, I bridge the gap between
+                        technical execution and strategic planning. I’m currently leading mobile squads across multiple
+                        business lines, implementing CI/CD, Git flow strategies, and robust testing practices.
+                    </p>
+                    <p style="margin-top: 15px;">
+                        What sets me apart is my blend of hands-on engineering skill, architectural vision, and business
+                        acumen. I’ve also built a thriving side business integrating POS and e-commerce systems.
                     </p>
                     <p style="margin-top: 15px; font-weight: 600; color: var(--accent-color);">
-                        منفتح على أدوار قيادية مثل Head of Mobile أو Mobile Architect أو Engineering Manager مع تركيز
-                        على الابتكار وبناء الفرق.
+                        I’m open to leadership roles such as <strong>Head of Mobile, Mobile Architect, or Engineering
+                            Manager</strong> with a focus on innovation, performance, and people-first growth.
                     </p>
-                    <hr style="margin: 20px 0; border: 0; border-top: 1px solid var(--border-color); opacity: 0.3;">
-                    <p>بالإضافة إلى عمقي التقني، أنا <strong>كاتب محتوى متميز</strong>، أقدم مهارات متنوعة في:</p>
-                    <ul class="info-list">
-                        <li><i class="fas fa-pen-nib"></i> كتابة محتوى المدونات والمواقع متوافقة مع محركات البحث (SEO).
-                        </li>
-                        <li><i class="fas fa-shopping-bag"></i> وصف تسويقي للمنتجات لزيادة معدلات البيع.</li>
-                        <li><i class="fas fa-bullhorn"></i> محتوى تسويقي وبوستات لتعريف العلامات التجارية.</li>
-                        <li><i class="fas fa-heart"></i> كتابة محتوى مؤثر لمنصات التبرعات والقضايا الإنسانية.</li>
-                    </ul>
                 </div>
                 <div class="about-stats">
                     <div class="stat-item">
                         <div class="stat-number">+10</div>
-                        <p>سنوات خبرة تقنية</p>
+                        <p>Years Experience</p>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number">PMP</div>
-                        <p>إدارة مشروعات</p>
+                        <p>Management</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">TOGAF</div>
+                        <p>Architecture</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">Scrum</div>
+                        <p>Agile Delivery</p>
                     </div>
                 </div>
             </div>
@@ -1039,52 +1051,61 @@
             </div>
             <div class="skills-container">
                 <div class="skill-category">
-                    <h3><i class="fas fa-mobile-alt"></i> التقنية والتطوير</h3>
+                    <h3><i class="fas fa-mobile-alt"></i> Mobile Engineering</h3>
                     <div class="skill-item">
-                        <p>Flutter, Dart, Cross-platform Architectures.</p>
+                        <p>Flutter, Dart, & Cross-platform Architectures.</p>
                     </div>
                     <div class="skill-item">
                         <p>CI/CD Pipelines (Bitrise, Jenkins, GitHub Actions).</p>
                     </div>
                     <div class="skill-item">
-                        <p>Engineering Management & Mentorship.</p>
+                        <p>Engineering Management & Team Mentorship.</p>
                     </div>
                 </div>
 
                 <div class="skill-category">
-                    <h3><i class="fas fa-pen-fancy"></i> صناعة المحتوى</h3>
+                    <h3><i class="fas fa-archway"></i> Architectural Vision</h3>
                     <div class="skill-item">
-                        <p>كتابة المحتوى الإبداعي والسرد القصصي التسويقي.</p>
+                        <p>Modular Design & Scalable Systems.</p>
                     </div>
                     <div class="skill-item">
-                        <p>تحسين محركات البحث (SEO) واستراتيجيات الظهور الرقمي.</p>
+                        <p>TOGAF Certified Enterprise Architecture.</p>
                     </div>
                     <div class="skill-item">
-                        <p>إدارة المدونات والمحتوى الإعلاني للسوشيال ميديا.</p>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-tasks"></i> الإدارة والاستراتيجية</h3>
-                    <div class="skill-item">
-                        <p>PMP, TOGAF & Scrum Certified.</p>
-                    </div>
-                    <div class="skill-item">
-                        <p>التخطيط الاستراتيجي للمنتجات الرقمية (Product Roadmap).</p>
+                        <p>Robust Testing & Security Practices.</p>
                     </div>
                 </div>
 
                 <div class="skill-category">
-                    <h3><i class="fas fa-language"></i> الترجمة</h3>
+                    <h3><i class="fas fa-tasks"></i> Strategy & Management</h3>
                     <div class="skill-item">
-                        <p>ترجمة المقالات من الانجليزية الى العربية والعكس.</p>
+                        <p>PMP & Scrum Certified Project Management.</p>
+                    </div>
+                    <div class="skill-item">
+                        <p>Product Roadmap & Strategic Planning.</p>
+                    </div>
+                    <div class="skill-item">
+                        <p>Agile Methodologies & Release Management.</p>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-briefcase"></i> Business Integration</h3>
+                    <div class="skill-item">
+                        <p>POS & E-commerce System Integration.</p>
+                    </div>
+                    <div class="skill-item">
+                        <p>Technical Business Acumen & Growth.</p>
+                    </div>
+                    <div class="skill-item">
+                        <p>Client Relations & Stakeholder Management.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="gallery" class="section">
+    <section id="gallery" class="section section-hidden">
         <div class="container">
             <div class="section-header">
                 <h2>معرض الأعمال</h2>
@@ -1242,7 +1263,7 @@
         <div class="container">
             <div class="section-header">
                 <h2>الخدمات</h2>
-                <p class="about-text">أقدم حلول كتابة وتحرير شاملة تبني حضوراً رقمياً متماسكاً ومقنعاً.</p>
+                <p class="about-text">حلول متكاملة في تطوير تطبيقات الجوال وإدارة المشروعات التقنية.</p>
             </div>
             <div class="projects-grid">
                 <div class="project-card">
@@ -1330,27 +1351,12 @@
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">
-                            <i class="fas fa-file-alt"></i>
-                            كتابة المحتوى والاستراتيجيات
-                        </h3>
-                        <p class="project-description">
-                            خدمات كتابة محتوى إبداعي وتقني يجمع بين قوة التحليل وجمال الكلمة المكتوبة.
-                        </p>
-                        <div class="project-tags">
-                            <span class="project-tag">SEO</span>
-                            <span class="project-tag">Copywriting</span>
-                            <span class="project-tag">Strategy</span>
-                        </div>
-                    </div>
-                </div>
+                <!-- Removed Content Writing Service -->
             </div>
         </div>
     </section>
 
-    <section id="projects" class="section">
+    <section id="projects" class="section section-hidden">
         <div class="container">
             <div class="section-header">
                 <h2>المشاريع – نماذج الأعمال</h2>
@@ -1753,7 +1759,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>بن عايد بن علي حسيني الشمري</h3>
-                    <p>Mobile Engineering Manager وكاتب محتوى متخصص في بناء الحلول التقنية والسرد الإبداعي.</p>
+                    <p>Mobile Engineering Manager | Senior Flutter Developer | PMP & TOGAF Certified</p>
                 </div>
 
                 <div class="footer-section">
@@ -1765,7 +1771,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 بن عايد بن علي حسيني الشمري. جميع الحقوق محفوظة.</p>
+                <p>&copy; 2026 بن عايد بن علي حسيني الشمري. جميع الحقوق محفوظة.</p>
             </div>
         </div>
     </footer>
